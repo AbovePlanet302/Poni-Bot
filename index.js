@@ -23,7 +23,7 @@ fs.readdir("./commands/", (err, files) => {
 
 bot.on("ready", async () => {
   console.log(`${bot.user.username} is online on ${bot.guilds.size} servers!`);
-  bot.user.setActivity("1 Servers!", {type: "WATCHING"});
+  bot.user.setActivity("Fruor Communications Server!", {type: "WATCHING"});
 
 });
 
@@ -40,4 +40,4 @@ bot.on("message", async message => {
 
 });
 
-bot.login(tokenfile.token);
+bot.login(procsess.env.token);
